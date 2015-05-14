@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/xiaoyee/Downloads/Android-ParallaxHeaderViewPager-master/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/home/xiaoyee/Downloads/Android-ParallaxHeaderViewPager-master/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-a49874d4a42e8b952ef6f83f11cd629673fd8e3e.jar" />
+    </item>
+    <item
+        jar="/home/xiaoyee/Downloads/Android-ParallaxHeaderViewPager-master/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/home/xiaoyee/Downloads/Android-ParallaxHeaderViewPager-master/build/intermediates/pre-dexed/debug/classes-b8c85af5c5c6839fb4b3639acc065e4a0ce641b3.jar" />
+    </item>
+    <item
+        jar="/home/xiaoyee/Downloads/Android-ParallaxHeaderViewPager-master/libs/nineoldandroids-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
+        <dex dex="/home/xiaoyee/Downloads/Android-ParallaxHeaderViewPager-master/build/intermediates/pre-dexed/debug/nineoldandroids-2.4.0-38760b8f9989ed662461bb177dfa8be8f5bed8db.jar" />
+    </item>
+    <item
+        jar="/home/xiaoyee/tools/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/home/xiaoyee/Downloads/Android-ParallaxHeaderViewPager-master/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-f4cc157579d37d7d82eea7717a1c8d60e360705b.jar" />
+    </item>
+    <item
+        jar="/home/xiaoyee/Downloads/Android-ParallaxHeaderViewPager-master/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/home/xiaoyee/Downloads/Android-ParallaxHeaderViewPager-master/build/intermediates/pre-dexed/debug/classes-b3a2dfe81611ff3cbf9b374a77226cbfe36c4f9e.jar" />
+    </item>
+
+</items>
