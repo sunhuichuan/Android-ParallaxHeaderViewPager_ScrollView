@@ -12,12 +12,11 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.main_ac);
 
         initActionbar();
-        getSupportFragmentManager().beginTransaction().add(R.id.container, DemoFragment.newInstance()).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.container, VPContainerFragment.newInstance()).commit();
 
     }
 
     void initActionbar() {
-        getSupportActionBar().setDisplayUseLogoEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setShowHideAnimationEnabled(true);

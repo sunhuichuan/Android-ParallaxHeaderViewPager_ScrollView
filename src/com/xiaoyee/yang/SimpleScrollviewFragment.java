@@ -11,11 +11,14 @@ import android.widget.ScrollView;
 public class SimpleScrollviewFragment extends ScrollTabHolderFragment implements RLScrollView.OnScrollChangedListener {
 
     private static final String TAG = "SimpleScroll";
-    RLScrollView mScrollView;
     private static final String ARG_POSITION = "position";
-
+    RLScrollView mScrollView;
     private int mPosition;
 
+
+    public SimpleScrollviewFragment() {
+        // Required empty public constructor
+    }
 
     public static Fragment newInstance(int position) {
         SimpleScrollviewFragment f = new SimpleScrollviewFragment();
@@ -23,10 +26,6 @@ public class SimpleScrollviewFragment extends ScrollTabHolderFragment implements
         b.putInt(ARG_POSITION, position);
         f.setArguments(b);
         return f;
-    }
-
-    public SimpleScrollviewFragment() {
-        // Required empty public constructor
     }
 
     @Override
@@ -50,7 +49,7 @@ public class SimpleScrollviewFragment extends ScrollTabHolderFragment implements
 
     @Override
     public void adjustScroll(int scrollHeight, int headerTranslationY) {
-        if (scrollHeight == 0 && !mScrollView.isAtTop()) {
+        if (scrollHeight == 0 && !mScrollView.isArriveTop()) {
             return;
         }
         mScrollView.setScrollY(-headerTranslationY);

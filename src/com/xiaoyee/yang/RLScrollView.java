@@ -6,10 +6,9 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ScrollView;
 
-/**
- * Created by xiaoyee on 5/14/15
- */
 public class RLScrollView extends ScrollView {
+
+    private OnScrollChangedListener onScrollChangedListener;
 
     public RLScrollView(Context context) {
         super(context);
@@ -23,15 +22,6 @@ public class RLScrollView extends ScrollView {
         super(context, attrs, defStyle);
     }
 
-    public interface OnScrollChangedListener {
-        void onScrollChanged(ScrollView who, int x, int y, int oldxX, int oldY);
-    }
-
-    private OnScrollChangedListener onScrollChangedListener;
-
-    /**
-     * @param onScrollChangedListener
-     */
     public void setOnScrollListener(OnScrollChangedListener onScrollChangedListener) {
         this.onScrollChangedListener = onScrollChangedListener;
     }
@@ -53,17 +43,15 @@ public class RLScrollView extends ScrollView {
         return child.getLocalVisibleRect(scrollBounds);
     }
 
-    /**
-     * @return
-     */
-    public boolean isAtTop() {
+    public boolean isArriveTop() {
         return getScrollY() <= 0;
     }
 
-    /**
-     * @return
-     */
-    public boolean isAtBottom() {
+    public boolean isArriveBottom() {
         return getScrollY() == getChildAt(getChildCount() - 1).getBottom() + getPaddingBottom() - getHeight();
+    }
+
+    public interface OnScrollChangedListener {
+        void onScrollChanged(ScrollView who, int x, int y, int oldxX, int oldY);
     }
 }

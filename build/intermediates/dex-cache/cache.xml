@@ -2,6 +2,13 @@
 <items version="2" >
 
     <item
+        jar="/home/xiaoyee/tools/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/home/xiaoyee/Downloads/Android-ParallaxHeaderViewPager-master/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-f4cc157579d37d7d82eea7717a1c8d60e360705b.jar" />
+    </item>
+    <item
         jar="/home/xiaoyee/Downloads/Android-ParallaxHeaderViewPager-master/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -21,13 +28,6 @@
         revision="21.1.2"
         sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
         <dex dex="/home/xiaoyee/Downloads/Android-ParallaxHeaderViewPager-master/build/intermediates/pre-dexed/debug/nineoldandroids-2.4.0-38760b8f9989ed662461bb177dfa8be8f5bed8db.jar" />
-    </item>
-    <item
-        jar="/home/xiaoyee/tools/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="/home/xiaoyee/Downloads/Android-ParallaxHeaderViewPager-master/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-f4cc157579d37d7d82eea7717a1c8d60e360705b.jar" />
     </item>
     <item
         jar="/home/xiaoyee/Downloads/Android-ParallaxHeaderViewPager-master/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"

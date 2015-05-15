@@ -22,9 +22,8 @@ import com.flavienlaurent.notboringactionbar.AlphaForegroundColorSpan;
 import com.flavienlaurent.notboringactionbar.KenBurnsSupportView;
 import com.nineoldandroids.view.ViewHelper;
 
-public class DemoFragment extends Fragment implements ScrollTabHolder, ViewPager.OnPageChangeListener {
+public class VPContainerFragment extends Fragment implements ScrollTabHolder, ViewPager.OnPageChangeListener {
 
-    private static final String TAG = "DemoFragment";
     private Activity mContext;
 
     private KenBurnsSupportView mHeaderPicture;
@@ -46,14 +45,18 @@ public class DemoFragment extends Fragment implements ScrollTabHolder, ViewPager
     private SpannableString mSpannableString;
     private AlphaForegroundColorSpan mAlphaForegroundColorSpan;
 
+    public static VPContainerFragment newInstance() {
+        return new VPContainerFragment();
+    }
+
+    public static float clamp(float value, float max, float min) {
+        return Math.max(Math.min(value, min), max);
+    }
+
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         mContext = activity;
-    }
-
-    public static DemoFragment newInstance() {
-        return new DemoFragment();
     }
 
     @Override
@@ -81,7 +84,7 @@ public class DemoFragment extends Fragment implements ScrollTabHolder, ViewPager
         mHeaderLogo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(mContext, "点击了头像", Toast.LENGTH_LONG).show();
+                Toast.makeText(mContext, "btnClicked", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -133,7 +136,6 @@ public class DemoFragment extends Fragment implements ScrollTabHolder, ViewPager
         currentHolder.adjustScroll(mHeader.getHeight(), (int) ViewHelper.getTranslationY(mHeader));
     }
 
-
     @Override
     public void adjustScroll(int scrollHeight, int headerTranslationY) {
         // nothing
@@ -162,11 +164,6 @@ public class DemoFragment extends Fragment implements ScrollTabHolder, ViewPager
         }
     }
 
-    public static float clamp(float value, float max, float min) {
-        return Math.max(Math.min(value, min), max);
-    }
-
-
     private void setTitleAlpha(float alpha) {
         mAlphaForegroundColorSpan.setAlpha(alpha);
         mSpannableString.setSpan(mAlphaForegroundColorSpan, 0, mSpannableString.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
@@ -177,8 +174,8 @@ public class DemoFragment extends Fragment implements ScrollTabHolder, ViewPager
 
     public class PagerAdapter extends FragmentPagerAdapter {
 
-        private SparseArrayCompat<ScrollTabHolder> mScrollTabHolders;
         private final String[] TITLES = {"Page 1", "Page 2", "Page 3"};
+        private SparseArrayCompat<ScrollTabHolder> mScrollTabHolders;
         private ScrollTabHolder mListener;
 
         public PagerAdapter(FragmentManager fm) {

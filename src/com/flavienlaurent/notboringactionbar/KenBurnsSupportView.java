@@ -1,5 +1,6 @@
 package com.flavienlaurent.notboringactionbar;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Handler;
 import android.util.AttributeSet;
@@ -15,18 +16,17 @@ import com.xiaoyee.yang.R;
 import java.util.Random;
 
 /**
- * Created by f.laurent on 21/11/13.
+ * Created by f.laurent on 21/11/13
  */
 public class KenBurnsSupportView extends FrameLayout {
 
     private static final String TAG = "KenBurnsView";
 
     private final Handler mHandler;
+    private final Random random = new Random();
     private int[] mResourceIds;
     private ImageView[] mImageViews;
     private int mActiveImageIndex = -1;
-
-    private final Random random = new Random();
     private int mSwapMs = 10000;
     private int mFadeInOutMs = 400;
 
@@ -147,11 +147,13 @@ public class KenBurnsSupportView extends FrameLayout {
         mImageViews[1] = (ImageView) view.findViewById(R.id.image1);
     }
 
+    @SuppressLint("Assert")
     private void fillImageViews() {
         for (int i = 0; i < mImageViews.length; i++) {
             if (i < mResourceIds.length) {
                 mImageViews[i].setImageResource(mResourceIds[i]);
             } else {
+                assert (mResourceIds.length >= 1);
                 mImageViews[i].setImageResource(mResourceIds[mResourceIds.length - 1]);
             }
         }
