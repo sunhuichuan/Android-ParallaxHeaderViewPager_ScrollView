@@ -155,7 +155,9 @@ public class VPContainerFragment extends Fragment implements ScrollTabHolder, Vi
             int iconAlpha = (int) (Math.abs(1 - alpha) * 255);
             drawable.setAlpha(iconAlpha);
             ((ActionBarActivity) mContext).getSupportActionBar().setHomeAsUpIndicator(drawable);
-            if (iconAlpha <= 1) {
+
+            //控制actionbar的显示，确保viewpager到达顶端时，仍然可以点击  //FIXME 此值有待优化
+            if (iconAlpha < 100) {
                 ((ActionBarActivity) mContext).getSupportActionBar().hide();
             } else {
                 ((ActionBarActivity) mContext).getSupportActionBar().show();
