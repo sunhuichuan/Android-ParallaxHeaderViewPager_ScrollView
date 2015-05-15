@@ -9,7 +9,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_ac);
+        setContentView(R.layout.main_activity_layout);
 
         initActionbar();
         getSupportFragmentManager().beginTransaction().add(R.id.container, VPContainerFragment.newInstance()).commit();

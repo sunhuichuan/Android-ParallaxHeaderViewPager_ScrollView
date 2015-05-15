@@ -36,7 +36,7 @@ public class SimpleScrollviewFragment extends ScrollTabHolderFragment implements
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_simple_scrollview, container, false);
+        View view = inflater.inflate(R.layout.fragment_simple_scrollview_layout, container, false);
         mScrollView = (RLScrollView) view.findViewById(R.id.svContainer);
         return view;
     }

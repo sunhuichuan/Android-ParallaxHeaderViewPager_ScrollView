@@ -33,7 +33,7 @@
                     android:id="@+id/tvNameProfileSetting"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="钢铁侠"
+                    android:text="Tony Stark"
                     android:layout_centerHorizontal="true"
                     android:layout_below="@+id/header_logo"
                     />

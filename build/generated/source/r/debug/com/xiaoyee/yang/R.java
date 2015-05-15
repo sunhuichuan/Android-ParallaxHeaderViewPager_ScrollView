@@ -1520,12 +1520,12 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f030013;
         public static final int abc_search_view=0x7f030014;
         public static final int abc_simple_dropdown_hint=0x7f030015;
-        public static final int activity_main=0x7f030016;
+        public static final int vp_container_layout =0x7f030016;
         public static final int fragment_demo=0x7f030017;
-        public static final int fragment_simple_scrollview=0x7f030018;
-        public static final int main_ac=0x7f030019;
+        public static final int fragment_simple_scrollview_layout =0x7f030018;
+        public static final int main_activity_layout =0x7f030019;
         public static final int support_simple_spinner_dropdown_item=0x7f03001a;
-        public static final int view_kenburns=0x7f03001b;
+        public static final int view_kenburns_layout =0x7f03001b;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f0a0000;

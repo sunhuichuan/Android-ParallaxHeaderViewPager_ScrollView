@@ -140,7 +140,7 @@ public class KenBurnsSupportView extends FrameLayout {
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
-        View view = inflate(getContext(), R.layout.view_kenburns, this);
+        View view = inflate(getContext(), R.layout.view_kenburns_layout, this);
 
         mImageViews = new ImageView[2];
         mImageViews[0] = (ImageView) view.findViewById(R.id.image0);

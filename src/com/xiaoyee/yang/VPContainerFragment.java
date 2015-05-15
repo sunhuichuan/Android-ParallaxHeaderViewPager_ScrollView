@@ -76,7 +76,7 @@ public class VPContainerFragment extends Fragment implements ScrollTabHolder, Vi
         mMinHeaderTranslation = -mMinHeaderHeight;
 
 
-        View view = inflater.inflate(R.layout.activity_main, container, false);
+        View view = inflater.inflate(R.layout.vp_container_layout, container, false);
 
         mHeaderPicture = (KenBurnsSupportView) view.findViewById(R.id.header_picture);
         mHeaderPicture.setResourceIds(R.drawable.pic0);
